@@ -24,7 +24,7 @@ namespace AspNetCore.NewDb.Migrations
 
                     b.HasKey("BlogId");
 
-                    b.ToTable("Blogs");
+                    b.ToTable("Blog");
                 });
 
             modelBuilder.Entity("EFGetStarted.AspNetCore.NewDb.Models.Post", b =>
@@ -42,7 +42,7 @@ namespace AspNetCore.NewDb.Migrations
 
                     b.HasIndex("BlogId");
 
-                    b.ToTable("Posts");
+                    b.ToTable("Post");
                 });
 
             modelBuilder.Entity("EFGetStarted.AspNetCore.NewDb.Models.Post", b =>

@@ -1,15 +1,10 @@
 ﻿using EFGetStarted.AspNetCore.NewDb.Models;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using MySQL.Data.EntityFrameworkCore.Extensions;
+using MySQL.Data.Entity.Extensions;
 
 namespace EFGetStarted.AspNetCore.NewDb
 {
@@ -30,7 +25,7 @@ namespace EFGetStarted.AspNetCore.NewDb
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connection = @"server=localhost;userid=efcore;port=3306;database=blogsFinal;sslmode=none;";
+            var connection = @"server=localhost;userid=efcore;port=3306;database=blogsfinal2;sslmode=none;";
             services.AddDbContext<BloggingContext>(options => options.UseMySQL(connection));
 
             // Add framework services.

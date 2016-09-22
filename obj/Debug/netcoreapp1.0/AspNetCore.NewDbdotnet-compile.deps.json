@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0/",
-    "signature": "55f7b72284a8e547b2ae77da3363ebce2f72d982"
+    "signature": "e1c69ad3486660e69b6d79cddf2a0afbd2b10021"
   },
   "compilationOptions": {
     "defines": [
@@ -28,31 +28,10 @@
           "Microsoft.Extensions.Logging.Console": "1.0.0",
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
-          "MySql.Data.EntityFrameworkCore": "7.0.5-ir21"
+          "SapientGuardian.EntityFrameworkCore.MySql": "7.1.9"
         },
         "compile": {
           "AspNetCore.NewDb.dll": {}
-        }
-      },
-      "Google.Protobuf/3.0.0": {
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.Linq": "4.1.0",
-          "System.Linq.Expressions": "4.1.0",
-          "System.ObjectModel": "4.0.12",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.Extensions": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Text.Encoding": "4.0.11",
-          "System.Text.RegularExpressions": "4.1.0",
-          "System.Threading": "4.0.11"
-        },
-        "compile": {
-          "lib/netstandard1.0/Google.Protobuf.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -1163,57 +1142,6 @@
           "ref/netstandard1.3/Microsoft.Win32.Registry.dll": {}
         }
       },
-      "MySql.Data/7.0.5-ir21": {
-        "dependencies": {
-          "Google.Protobuf": "3.0.0",
-          "Microsoft.Extensions.Configuration.Json": "1.0.0",
-          "System.Collections.NonGeneric": "4.0.1",
-          "System.ComponentModel": "4.0.1",
-          "System.ComponentModel.Annotations": "4.1.0",
-          "System.ComponentModel.Primitives": "4.1.0",
-          "System.ComponentModel.TypeConverter": "4.1.0",
-          "System.Data.Common": "4.1.0",
-          "System.Data.SqlClient": "4.1.0",
-          "System.Diagnostics.Process": "4.1.0",
-          "System.Diagnostics.TextWriterTraceListener": "4.0.0",
-          "System.IO.Compression": "4.1.0",
-          "System.IO.FileSystem.Primitives": "4.0.1",
-          "System.IO.MemoryMappedFiles": "4.0.0",
-          "System.IO.Pipes": "4.0.0",
-          "System.Linq.Expressions": "4.1.0",
-          "System.Net.NameResolution": "4.0.0",
-          "System.Net.Security": "4.0.0",
-          "System.Net.Sockets": "4.1.0",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.TypeExtensions": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0",
-          "System.Security.Principal.Windows": "4.0.0",
-          "System.Text.Encoding.CodePages": "4.0.1",
-          "System.Threading.ThreadPool": "4.0.10",
-          "System.Threading.Timer": "4.0.1"
-        },
-        "compile": {
-          "lib/netstandard1.6/MySql.Data.dll": {}
-        }
-      },
-      "MySql.Data.EntityFrameworkCore/7.0.5-ir21": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "1.0.0",
-          "Microsoft.EntityFrameworkCore.Relational": "1.0.0",
-          "Microsoft.Extensions.Caching.Memory": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection": "1.0.0",
-          "Microsoft.Extensions.Logging": "1.0.0",
-          "MySql.Data": "7.0.5-ir21",
-          "NETStandard.Library": "1.6.0",
-          "Remotion.Linq": "2.1.1",
-          "System.Collections.Immutable": "1.2.0",
-          "System.Interactive.Async": "3.0.0"
-        },
-        "compile": {
-          "lib/netstandard1.6/MySql.Data.EntityFrameworkCore.dll": {}
-        }
-      },
       "NETStandard.Library/1.6.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -1315,12 +1243,6 @@
           "Microsoft.NETCore.Targets": "1.0.1"
         }
       },
-      "runtime.native.System.Data.SqlClient.sni/4.0.0": {
-        "dependencies": {
-          "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni": "4.0.1",
-          "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni": "4.0.1"
-        }
-      },
       "runtime.native.System.IO.Compression/4.1.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -1345,8 +1267,57 @@
           "Microsoft.NETCore.Targets": "1.0.1"
         }
       },
-      "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1": {},
-      "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni/4.0.1": {},
+      "SapientGuardian.EntityFrameworkCore.MySql/7.1.9": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "1.0.0",
+          "NETStandard.Library": "1.6.0",
+          "SapientGuardian.MySql.Data": "6.9.813",
+          "System.Linq": "4.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/SapientGuardian.EntityFrameworkCore.MySql.dll": {}
+        }
+      },
+      "SapientGuardian.MySql.Data/6.9.813": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0",
+          "System.Collections": "4.0.11",
+          "System.Collections.NonGeneric": "4.0.1",
+          "System.Collections.Specialized": "4.0.1",
+          "System.ComponentModel.TypeConverter": "4.1.0",
+          "System.Console": "4.0.0",
+          "System.Data.Common": "4.1.0",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.TraceSource": "4.0.0",
+          "System.Diagnostics.Tracing": "4.1.0",
+          "System.IO.FileSystem": "4.0.1",
+          "System.Linq": "4.1.0",
+          "System.Net.NameResolution": "4.0.0",
+          "System.Net.Primitives": "4.0.11",
+          "System.Net.Security": "4.0.0",
+          "System.Net.Sockets": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Resources.Writer": "4.0.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.1.1",
+          "System.Security.Cryptography.Algorithms": "4.2.0",
+          "System.Security.Cryptography.Primitives": "4.0.0",
+          "System.Security.Cryptography.X509Certificates": "4.1.0",
+          "System.Text.Encoding": "4.0.11",
+          "System.Text.Encoding.Extensions": "4.0.11",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Timer": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/SapientGuardian.MySql.Data.dll": {}
+        }
+      },
       "System.AppContext/4.1.0": {
         "dependencies": {
           "System.Runtime": "4.1.0"
@@ -1431,6 +1402,9 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Collections.Specialized.dll": {}
         }
       },
       "System.ComponentModel/4.0.1": {
@@ -1518,50 +1492,6 @@
           "ref/netstandard1.2/System.Data.Common.dll": {}
         }
       },
-      "System.Data.SqlClient/4.1.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "Microsoft.Win32.Primitives": "4.0.1",
-          "System.Collections": "4.0.11",
-          "System.Collections.Concurrent": "4.0.12",
-          "System.Data.Common": "4.1.0",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Diagnostics.DiagnosticSource": "4.0.0",
-          "System.Globalization": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.IO.Pipes": "4.0.0",
-          "System.Linq": "4.1.0",
-          "System.Net.NameResolution": "4.0.0",
-          "System.Net.Primitives": "4.0.11",
-          "System.Net.Security": "4.0.0",
-          "System.Net.Sockets": "4.1.0",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.TypeExtensions": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.Handles": "4.0.1",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0",
-          "System.Security.Cryptography.X509Certificates": "4.1.0",
-          "System.Security.Principal": "4.0.1",
-          "System.Security.Principal.Windows": "4.0.0",
-          "System.Text.Encoding": "4.0.11",
-          "System.Text.Encoding.CodePages": "4.0.1",
-          "System.Text.Encoding.Extensions": "4.0.11",
-          "System.Text.RegularExpressions": "4.1.0",
-          "System.Threading": "4.0.11",
-          "System.Threading.Tasks": "4.0.11",
-          "System.Threading.Thread": "4.0.0",
-          "System.Threading.ThreadPool": "4.0.10",
-          "System.Threading.Timer": "4.0.1",
-          "System.Xml.ReaderWriter": "4.0.11",
-          "runtime.native.System.Data.SqlClient.sni": "4.0.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Data.SqlClient.dll": {}
-        }
-      },
       "System.Diagnostics.Contracts/4.0.1": {
         "dependencies": {
           "System.Runtime": "4.1.0"
@@ -1644,19 +1574,6 @@
         },
         "compile": {
           "ref/netstandard1.3/System.Diagnostics.StackTrace.dll": {}
-        }
-      },
-      "System.Diagnostics.TextWriterTraceListener/4.0.0": {
-        "dependencies": {
-          "System.Diagnostics.TraceSource": "4.0.0",
-          "System.Globalization": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Threading": "4.0.11"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Diagnostics.TextWriterTraceListener.dll": {}
         }
       },
       "System.Diagnostics.Tools/4.0.1": {
@@ -1879,31 +1796,6 @@
         },
         "compile": {
           "ref/netstandard1.3/System.IO.MemoryMappedFiles.dll": {}
-        }
-      },
-      "System.IO.Pipes/4.0.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.IO.FileSystem.Primitives": "4.0.1",
-          "System.Net.Primitives": "4.0.11",
-          "System.Net.Sockets": "4.1.0",
-          "System.Reflection": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.Handles": "4.0.1",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Security.Principal": "4.0.1",
-          "System.Text.Encoding": "4.0.11",
-          "System.Threading": "4.0.11",
-          "System.Threading.Overlapped": "4.0.1",
-          "System.Threading.Tasks": "4.0.11",
-          "runtime.native.System": "4.0.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.IO.Pipes.dll": {}
         }
       },
       "System.IO.UnmanagedMemoryStream/4.0.1": {
@@ -2295,6 +2187,19 @@
           "ref/netstandard1.0/System.Resources.ResourceManager.dll": {}
         }
       },
+      "System.Resources.Writer/4.0.0": {
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Text.Encoding": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.3/System.Resources.Writer.dll": {}
+        }
+      },
       "System.Runtime/4.1.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -2582,9 +2487,6 @@
           "System.Runtime.InteropServices": "4.1.0",
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Text.Encoding.CodePages.dll": {}
         }
       },
       "System.Text.Encoding.Extensions/4.0.11": {
@@ -2819,31 +2721,10 @@
           "Microsoft.Extensions.Logging.Console": "1.0.0",
           "Microsoft.Extensions.Logging.Debug": "1.0.0",
           "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0",
-          "MySql.Data.EntityFrameworkCore": "7.0.5-ir21"
+          "SapientGuardian.EntityFrameworkCore.MySql": "7.1.9"
         },
         "runtime": {
           "AspNetCore.NewDb.dll": {}
-        }
-      },
-      "Google.Protobuf/3.0.0": {
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.Linq": "4.1.0",
-          "System.Linq.Expressions": "4.1.0",
-          "System.ObjectModel": "4.0.12",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.Extensions": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Text.Encoding": "4.0.11",
-          "System.Text.RegularExpressions": "4.1.0",
-          "System.Threading": "4.0.11"
-        },
-        "runtime": {
-          "lib/netstandard1.0/Google.Protobuf.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -3951,57 +3832,6 @@
           "System.Runtime.InteropServices": "4.1.0"
         }
       },
-      "MySql.Data/7.0.5-ir21": {
-        "dependencies": {
-          "Google.Protobuf": "3.0.0",
-          "Microsoft.Extensions.Configuration.Json": "1.0.0",
-          "System.Collections.NonGeneric": "4.0.1",
-          "System.ComponentModel": "4.0.1",
-          "System.ComponentModel.Annotations": "4.1.0",
-          "System.ComponentModel.Primitives": "4.1.0",
-          "System.ComponentModel.TypeConverter": "4.1.0",
-          "System.Data.Common": "4.1.0",
-          "System.Data.SqlClient": "4.1.0",
-          "System.Diagnostics.Process": "4.1.0",
-          "System.Diagnostics.TextWriterTraceListener": "4.0.0",
-          "System.IO.Compression": "4.1.0",
-          "System.IO.FileSystem.Primitives": "4.0.1",
-          "System.IO.MemoryMappedFiles": "4.0.0",
-          "System.IO.Pipes": "4.0.0",
-          "System.Linq.Expressions": "4.1.0",
-          "System.Net.NameResolution": "4.0.0",
-          "System.Net.Security": "4.0.0",
-          "System.Net.Sockets": "4.1.0",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.TypeExtensions": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0",
-          "System.Security.Principal.Windows": "4.0.0",
-          "System.Text.Encoding.CodePages": "4.0.1",
-          "System.Threading.ThreadPool": "4.0.10",
-          "System.Threading.Timer": "4.0.1"
-        },
-        "runtime": {
-          "lib/netstandard1.6/MySql.Data.dll": {}
-        }
-      },
-      "MySql.Data.EntityFrameworkCore/7.0.5-ir21": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "1.0.0",
-          "Microsoft.EntityFrameworkCore.Relational": "1.0.0",
-          "Microsoft.Extensions.Caching.Memory": "1.0.0",
-          "Microsoft.Extensions.DependencyInjection": "1.0.0",
-          "Microsoft.Extensions.Logging": "1.0.0",
-          "MySql.Data": "7.0.5-ir21",
-          "NETStandard.Library": "1.6.0",
-          "Remotion.Linq": "2.1.1",
-          "System.Collections.Immutable": "1.2.0",
-          "System.Interactive.Async": "3.0.0"
-        },
-        "runtime": {
-          "lib/netstandard1.6/MySql.Data.EntityFrameworkCore.dll": {}
-        }
-      },
       "NETStandard.Library/1.6.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -4103,12 +3933,6 @@
           "Microsoft.NETCore.Targets": "1.0.1"
         }
       },
-      "runtime.native.System.Data.SqlClient.sni/4.0.0": {
-        "dependencies": {
-          "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni": "4.0.1",
-          "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni": "4.0.1"
-        }
-      },
       "runtime.native.System.IO.Compression/4.1.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -4133,8 +3957,57 @@
           "Microsoft.NETCore.Targets": "1.0.1"
         }
       },
-      "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1": {},
-      "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni/4.0.1": {},
+      "SapientGuardian.EntityFrameworkCore.MySql/7.1.9": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "1.0.0",
+          "NETStandard.Library": "1.6.0",
+          "SapientGuardian.MySql.Data": "6.9.813",
+          "System.Linq": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/SapientGuardian.EntityFrameworkCore.MySql.dll": {}
+        }
+      },
+      "SapientGuardian.MySql.Data/6.9.813": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0",
+          "System.Collections": "4.0.11",
+          "System.Collections.NonGeneric": "4.0.1",
+          "System.Collections.Specialized": "4.0.1",
+          "System.ComponentModel.TypeConverter": "4.1.0",
+          "System.Console": "4.0.0",
+          "System.Data.Common": "4.1.0",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.TraceSource": "4.0.0",
+          "System.Diagnostics.Tracing": "4.1.0",
+          "System.IO.FileSystem": "4.0.1",
+          "System.Linq": "4.1.0",
+          "System.Net.NameResolution": "4.0.0",
+          "System.Net.Primitives": "4.0.11",
+          "System.Net.Security": "4.0.0",
+          "System.Net.Sockets": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Resources.Writer": "4.0.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.1.1",
+          "System.Security.Cryptography.Algorithms": "4.2.0",
+          "System.Security.Cryptography.Primitives": "4.0.0",
+          "System.Security.Cryptography.X509Certificates": "4.1.0",
+          "System.Text.Encoding": "4.0.11",
+          "System.Text.Encoding.Extensions": "4.0.11",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Timer": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/SapientGuardian.MySql.Data.dll": {}
+        }
+      },
       "System.AppContext/4.1.0": {
         "dependencies": {
           "System.Runtime": "4.1.0"
@@ -4303,47 +4176,6 @@
           "lib/netstandard1.2/System.Data.Common.dll": {}
         }
       },
-      "System.Data.SqlClient/4.1.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "Microsoft.Win32.Primitives": "4.0.1",
-          "System.Collections": "4.0.11",
-          "System.Collections.Concurrent": "4.0.12",
-          "System.Data.Common": "4.1.0",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Diagnostics.DiagnosticSource": "4.0.0",
-          "System.Globalization": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.IO.Pipes": "4.0.0",
-          "System.Linq": "4.1.0",
-          "System.Net.NameResolution": "4.0.0",
-          "System.Net.Primitives": "4.0.11",
-          "System.Net.Security": "4.0.0",
-          "System.Net.Sockets": "4.1.0",
-          "System.Reflection": "4.1.0",
-          "System.Reflection.TypeExtensions": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.Handles": "4.0.1",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0",
-          "System.Security.Cryptography.X509Certificates": "4.1.0",
-          "System.Security.Principal": "4.0.1",
-          "System.Security.Principal.Windows": "4.0.0",
-          "System.Text.Encoding": "4.0.11",
-          "System.Text.Encoding.CodePages": "4.0.1",
-          "System.Text.Encoding.Extensions": "4.0.11",
-          "System.Text.RegularExpressions": "4.1.0",
-          "System.Threading": "4.0.11",
-          "System.Threading.Tasks": "4.0.11",
-          "System.Threading.Thread": "4.0.0",
-          "System.Threading.ThreadPool": "4.0.10",
-          "System.Threading.Timer": "4.0.1",
-          "System.Xml.ReaderWriter": "4.0.11",
-          "runtime.native.System.Data.SqlClient.sni": "4.0.0"
-        }
-      },
       "System.Diagnostics.Contracts/4.0.1": {
         "dependencies": {
           "System.Runtime": "4.1.0"
@@ -4420,19 +4252,6 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Diagnostics.StackTrace.dll": {}
-        }
-      },
-      "System.Diagnostics.TextWriterTraceListener/4.0.0": {
-        "dependencies": {
-          "System.Diagnostics.TraceSource": "4.0.0",
-          "System.Globalization": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Threading": "4.0.11"
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Diagnostics.TextWriterTraceListener.dll": {}
         }
       },
       "System.Diagnostics.Tools/4.0.1": {
@@ -4620,28 +4439,6 @@
           "System.Runtime.Handles": "4.0.1",
           "System.Runtime.InteropServices": "4.1.0",
           "System.Threading": "4.0.11",
-          "System.Threading.Tasks": "4.0.11",
-          "runtime.native.System": "4.0.0"
-        }
-      },
-      "System.IO.Pipes/4.0.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.IO.FileSystem.Primitives": "4.0.1",
-          "System.Net.Primitives": "4.0.11",
-          "System.Net.Sockets": "4.1.0",
-          "System.Reflection": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.Handles": "4.0.1",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Security.Principal": "4.0.1",
-          "System.Text.Encoding": "4.0.11",
-          "System.Threading": "4.0.11",
-          "System.Threading.Overlapped": "4.0.1",
           "System.Threading.Tasks": "4.0.11",
           "runtime.native.System": "4.0.0"
         }
@@ -5012,6 +4809,19 @@
           "System.Globalization": "4.0.11",
           "System.Reflection": "4.1.0",
           "System.Runtime": "4.1.0"
+        }
+      },
+      "System.Resources.Writer/4.0.0": {
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Text.Encoding": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Resources.Writer.dll": {}
         }
       },
       "System.Runtime/4.1.0": {
@@ -5500,11 +5310,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Google.Protobuf/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-l5CH4IoWys8hIQR53F+nM3RpFOX12Jj9iXVOh30ejoz0TRHApzvAHc+5T5mGnMWa/vCVfYFZkhqStn+IuK8+5g=="
-    },
     "Libuv/1.9.0": {
       "type": "package",
       "serviceable": true,
@@ -5945,16 +5750,6 @@
       "serviceable": true,
       "sha512": "sha512-gCdN83aeFIBXMPDPwz0rxdBChjLd1uJe8zQhevAC2/MO40puzL7kKJtBW91wt6xd8cRSjbjesY1/FfZDhioLmw=="
     },
-    "MySql.Data/7.0.5-ir21": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-IINE4gN8k+PdzCYOxFmJTX2s+BzC5kEuNK2+0mQDchcFWw/7QOyRtKkHLfjk9ysgaUmMak98Vkur1ai0jcEddA=="
-    },
-    "MySql.Data.EntityFrameworkCore/7.0.5-ir21": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-9u0enAa15MLeWzNOwn7wzFu7Ks7ThWwnpPnmh+W2FxSvKlHdQDc4oSPdtu3j+SKP7Hgq4QLpgb3m7LNXBy2IKA=="
-    },
     "NETStandard.Library/1.6.0": {
       "type": "package",
       "serviceable": true,
@@ -5974,11 +5769,6 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-fByKHERGL7uJ6A1Jou9sdXqxJsPQjIuG0OY76SZquDgYsIkNpoHC5yo44CoPVpKg2Kgt0nQLTgiJNbsGHLwgKw=="
-    },
-    "runtime.native.System.Data.SqlClient.sni/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-DcMVtYwugo1LOc9MVchInxlLNoFe/+21MsEQU9yIZX561chzxDlFDWowWF+Kc262PyD3eLkDab1JyJrs73Qtkg=="
     },
     "runtime.native.System.IO.Compression/4.1.0": {
       "type": "package",
@@ -6000,15 +5790,15 @@
       "serviceable": true,
       "sha512": "sha512-cb3sk7TDnOssB4WLBYTV7hwF6GjyCUvSQE/XNny4LO8qyibd1tkw8Jh9+JO5hRfiBOie05/a4yYOkVETBTWJiQ=="
     },
-    "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1": {
+    "SapientGuardian.EntityFrameworkCore.MySql/7.1.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-My20HZqJbDS4rWmdOcJ3TPf9iX6M/sTF2nBSUHBvfWp1iNip3eMS+K65oQgsLRxX6h21ic3YED06c2ye2sL7FQ=="
+      "sha512": "sha512-m2r+FUneI/u74LPUoXKfUFXrubzGSMNu0q8LMr5XIz4jgWg7kwcfflXYYmD+ZGdtLP5tzww3airEKo4cloCynA=="
     },
-    "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni/4.0.1": {
+    "SapientGuardian.MySql.Data/6.9.813": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ykiYCf/0hIc0xm+g6bVX8nw9St5Ool+r4US+B+56Lv/GFnDG5G9BK4n7WkrwEpuWV3XjMn38oHgHOnNMzBVNKA=="
+      "sha512": "sha512-9umAXTPXeO66iSThDL7mOB3cDD1zu3N5Kl4X/1jLLJJZVtEAtpOCeGXSGG99u6On9lZKSLEjEC7EJ+YBIGWyCw=="
     },
     "System.AppContext/4.1.0": {
       "type": "package",
@@ -6075,11 +5865,6 @@
       "serviceable": true,
       "sha512": "sha512-epU8jeTe7aE7RqGHq9rZ8b0Q4Ah7DgubzHQblgZMSqgW1saW868WmooSyC5ywf8upLBkcVLDu93W9GPWUYsU2Q=="
     },
-    "System.Data.SqlClient/4.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-yqMZgzzKHdG84QmA/PPZUORaoisfvztvFqyPs7dPafJhNxlS7STf9OMCFrP/tITQCqImkm1+X4d2oiWOT2oTKg=="
-    },
     "System.Diagnostics.Contracts/4.0.1": {
       "type": "package",
       "serviceable": true,
@@ -6109,11 +5894,6 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-9U/zdJUIYaituMNVXZVfRAH/RwkdcK0VOMgOqQ/fNZEVij6fJKBQHBcap3HkZn2LwNOP1nfskHoWAoM50lLbDg=="
-    },
-    "System.Diagnostics.TextWriterTraceListener/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-w36Dr8yKy8xP150qPANe7Td+/zOI3G62ImRcHDIEW+oUXUuTKZHd4DHmqRx5+x8RXd85v3tXd1uhNTfsr+yxjA=="
     },
     "System.Diagnostics.Tools/4.0.1": {
       "type": "package",
@@ -6189,11 +5969,6 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-gJ+hZcCsD+0UmACw3hHy0FDbB31iKjGeff0pfZcJ4NhnKcio5/a13ySpZRLAbmra2AcGCcetZcSLkBPONxoEnA=="
-    },
-    "System.IO.Pipes/4.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-L9QVhk8hIEix5KNA0kW58Ha+Y1dNGqqqIhAaJkhcGCWeQzUmN0njzI7SG/XAazpMecboOdFFlH3pH/qbwXLJAg=="
     },
     "System.IO.UnmanagedMemoryStream/4.0.1": {
       "type": "package",
@@ -6324,6 +6099,11 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-RBiM/7CUiRF95C8cCRU90k6MpRwzxj5Rzqrqk7+TJL5YOr0GMrbbcvqxevfgGslMQeBlx1EVZyqB2MuXmuz1ug=="
+    },
+    "System.Resources.Writer/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Hz+ZS81dVSNy93YyJhhL3GwzmMhfcQ8FbUooAt9MO4joIe0vPM4gclv0C82ko1tuN/Kw6CvZFLYkgk6n9xvEkg=="
     },
     "System.Runtime/4.1.0": {
       "type": "package",

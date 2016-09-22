@@ -8,7 +8,7 @@ using EFGetStarted.AspNetCore.NewDb.Models;
 namespace AspNetCore.NewDb.Migrations
 {
     [DbContext(typeof(BloggingContext))]
-    [Migration("20160922114526_v1")]
+    [Migration("20160922142446_v1")]
     partial class v1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,7 @@ namespace AspNetCore.NewDb.Migrations
 
                     b.HasKey("BlogId");
 
-                    b.ToTable("Blogs");
+                    b.ToTable("Blog");
                 });
 
             modelBuilder.Entity("EFGetStarted.AspNetCore.NewDb.Models.Post", b =>
@@ -43,7 +43,7 @@ namespace AspNetCore.NewDb.Migrations
 
                     b.HasIndex("BlogId");
 
-                    b.ToTable("Posts");
+                    b.ToTable("Post");
                 });
 
             modelBuilder.Entity("EFGetStarted.AspNetCore.NewDb.Models.Post", b =>

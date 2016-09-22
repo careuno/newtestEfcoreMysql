@@ -9,7 +9,7 @@ namespace AspNetCore.NewDb.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Blogs",
+                name: "Blog",
                 columns: table => new
                 {
                     BlogId = table.Column<int>(nullable: false)
@@ -18,11 +18,11 @@ namespace AspNetCore.NewDb.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Blogs", x => x.BlogId);
+                    table.PrimaryKey("PK_Blog", x => x.BlogId);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Posts",
+                name: "Post",
                 columns: table => new
                 {
                     PostId = table.Column<int>(nullable: false)
@@ -33,28 +33,28 @@ namespace AspNetCore.NewDb.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Posts", x => x.PostId);
+                    table.PrimaryKey("PK_Post", x => x.PostId);
                     table.ForeignKey(
-                        name: "FK_Posts_Blogs_BlogId",
+                        name: "FK_Post_Blog_BlogId",
                         column: x => x.BlogId,
-                        principalTable: "Blogs",
+                        principalTable: "Blog",
                         principalColumn: "BlogId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Posts_BlogId",
-                table: "Posts",
+                name: "IX_Post_BlogId",
+                table: "Post",
                 column: "BlogId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Posts");
+                name: "Post");
 
             migrationBuilder.DropTable(
-                name: "Blogs");
+                name: "Blog");
         }
     }
 }
